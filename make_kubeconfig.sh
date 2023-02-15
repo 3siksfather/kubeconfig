@@ -7,19 +7,19 @@ CLUSTERNAME=$4
 
 if [ -z "${API_SERVER_URL}" ]; then
   echo "requried API_SERVER_URL"
-  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT"
+  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT CLUSTERNAME"
   exit 1
 fi
 
 if [ -z "${NAMESPACE}" ]; then
   echo "requried NAMESPACE"
-  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT"
+  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT CLUSTERNAME"
   exit 1
 fi
 
 if [ -z "${SERVICEACCOUNT}" ]; then
   echo "requried SERVICEACCOUNT"
-  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT"
+  echo "usage: make_kubeconfig.sh API_SERVER_URL NAMESPACE SERVICEACCOUNT CLUSTERNAME"
   exit 1
 fi
 
